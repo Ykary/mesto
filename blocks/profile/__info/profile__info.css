@@ -1,0 +1,10 @@
+.profile__info {
+    width: 336px;
+    height: 73px;
+    display: grid;
+    align-self: center;
+    grid-template-areas: 
+    'name button'
+    'info info';
+      
+}

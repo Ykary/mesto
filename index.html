@@ -5,63 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css"/>
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
     <main class="main">
       <header class="header">
-        <img src="./images/logo.svg" alt="логотип проекта Место-Россия" class="header__logo" />
+        <img
+          src="./images/logo.svg"
+          alt="логотип проекта Место-Россия"
+          class="header__logo"
+        />
       </header>
       <section class="profile">
-        <img src="./images/image.jpg" alt="аватар пользователя" />
+        <img
+          src="./images/image.jpg"
+          alt="аватар пользователя"
+          class="profile__photo"
+        />
         <div class="profile__info">
           <h1 class="profile__username">Жак-Ив Кусто</h1>
-          <p class="profile__userinfo">Исследователь океана</p>
           <button class="profile__edit-button">
-              <img src="./images/Edit Button.svg" alt="кнопка редактировать профиль">
+            <img
+              src="./images/Edit Button.svg"
+              alt="кнопка редактировать профиль"
+            />
           </button>
+          <p class="profile__userinfo">Исследователь океана</p>
         </div>
         <button class="profile__add-button">
-            <img src="./images/Add Button.svg" alt="кнопка добавить контент">
+          <img src="./images/Add Button.svg" alt="кнопка добавить контент" />
         </button>
       </section>
       <section class="elements">
         <ul class="elements__content">
           <li class="elements__item">
-            <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="церковь в горах" />
-            <h2 class="elements__place">Карачаевск</h2>
-            <button class="elements__like"></button>
+            <img
+              src="./images/kirill-pershin-1088404-unsplash.jpg"
+              alt="церковь в горах"
+              class="elements__photo"
+            />
+            <div class="elements__place">
+              <h2 class="elements__title">Карачаевск</h2>
+              <button class="elements__like">
+                <img src="./images/Vector (Stroke).svg" alt="кнопка нравится" />
+              </button>
+            </div>
           </li>
           <li class="elements__item">
-            <img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Вид на гору Эльбрус" />
-            <h2 class="elements__place">Гора Эльбрус</h2>
-            <button class="elements__like"></button>
+            <img
+              src="./images/kirill-pershin-1404681-unsplash.jpg"
+              alt="Вид на гору Эльбрус"
+              class="elements__photo"
+            />
+            <div class="elements__place">
+              <h2 class="elements__title">Гора Эльбрус</h2>
+              <button class="elements__like">
+                <img src="./images/Vector (Stroke).svg" alt="кнопка нравится" />
+              </button>
+            </div>
           </li>
           <li class="elements__item">
-            <img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="горные вершины" />
-            <h2 class="elements__place">Домбай</h2>
-            <button class="elements__like"></button>
+            <img
+              src="./images/kirill-pershin-1556355-unsplash.jpg"
+              alt="горные вершины"
+              class="elements__photo"
+            />
+            <div class="elements__place">
+              <h2 class="elements__title">Домбай</h2>
+              <button class="elements__like">
+                <img src="./images/Vector (Stroke).svg" alt="кнопка нравится" />
+              </button>
+            </div>
           </li>
           <li class="elements__item">
-            <img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Вид на гору Эльбрус" />
-            <h2 class="elements__place">Гора Эльбрус</h2>
-            <button class="elements__like"></button>
+            <img
+              src="./images/kirill-pershin-1404681-unsplash.jpg"
+              alt="Вид на гору Эльбрус"
+              class="elements__photo"
+            />
+            <div class="elements__place">
+              <h2 class="elements__title">Гора Эльбрус</h2>
+              <button class="elements__like">
+                <img src="./images/Vector (Stroke).svg" alt="кнопка нравится" />
+              </button>
+            </div>
           </li>
           <li class="elements__item">
-            <img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="горные вершины" />
-            <h2 class="elements__place">Домбай</h2>
-            <button class="elements__like"></button>
+            <img
+              src="./images/kirill-pershin-1556355-unsplash.jpg"
+              alt="горные вершины"
+              class="elements__photo"
+            />
+            <div class="elements__place">
+              <h2 class="elements__title">Домбай</h2>
+              <button class="elements__like">
+                <img src="./images/Vector (Stroke).svg" alt="кнопка нравится" />
+              </button>
+            </div>
           </li>
           <li class="elements__item">
-            <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="церковь в горах" />
-            <h2 class="elements__place">Карачаево-Черкесск</h2>
-            <button class="elements__like"></button>
+            <img
+              src="./images/kirill-pershin-1088404-unsplash.jpg"
+              alt="церковь в горах"
+              class="elements__photo"
+            />
+            <div class="elements__place">
+              <h2 class="elements__title">Карачаево-Черкессия</h2>
+              <button class="elements__like">
+                <img src="./images/Vector (Stroke).svg" alt="кнопка нравится" />
+              </button>
+            </div>
           </li>
         </ul>
       </section>
+      <footer class="footer">
+        <p class="footer__copiright">© 2022 Mesto Russia</p>
+      </footer>
     </main>
-    <footer class="footer">
-      <p class="footer__copiright">© 2022 Mesto Russia</p>
-    </footer>
   </body>
 </html>

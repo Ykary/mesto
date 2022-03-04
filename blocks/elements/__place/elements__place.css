@@ -1,0 +1,9 @@
+.elements__place {
+  color: black;
+  width: 241px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+  overflow: hidden;
+}

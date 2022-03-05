@@ -3,3 +3,11 @@
     color: #545454;
     font-size: 18px;
 }
+
+@media (max-width: 767px) {
+    .footer__copiright {
+      font-size: 14px;
+      margin-top: 50px;
+    }
+  }
+  

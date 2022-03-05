@@ -2,7 +2,35 @@
   margin-top: 15px;
   width: 24px;
   height: 24px;
-  background: transparent;
-  border: none;
   padding: 0;
+  background: transparent;
+  border: 1px solid white;
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+  
+}
+
+.profile__edit-button:hover {
+  opacity: 60%;
+}
+
+@media (max-width: 920px) {
+  .profile__edit-button {
+      margin: 5px 0 0;
+      justify-self: start;
+          
+  }   
+}
+
+@media (max-width: 767px) {
+  .profile__edit-button {
+      margin: 0;
+      width: 18px;
+      height: 18px;
+      
+          
+  }   
 }

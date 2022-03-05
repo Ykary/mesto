@@ -1,7 +1,21 @@
 .profile__username {
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 1.14;
-   grid-area: name;
-   margin: 0 18px 0 0;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.14;
+  grid-area: name;
+  margin: 0 18px 0 0;
+  grid-area: name;
+}
+
+@media (max-width: 920px) {
+  .profile__username {
+    justify-self: center;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .profile__username {
+    font-size: 27px;
+    line-height: 1.2;
+  }
 }

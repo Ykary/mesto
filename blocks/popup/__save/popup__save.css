@@ -1,14 +1,14 @@
 .popup__save {
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    margin: 45px 0 0;
-    cursor: pointer;
-    transition: 0.2s linear;
-  }
-  .popup__save:hover {
-      opacity: 80%;
-    }
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin: 45px 0 0;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.popup__save:hover {
+  opacity: 80%;
+}

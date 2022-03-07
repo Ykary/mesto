@@ -19,18 +19,15 @@
 
 @media (max-width: 920px) {
   .profile__edit-button {
-      margin: 5px 0 0;
-      justify-self: start;
-          
-  }   
+    margin: 5px 0 0;
+    justify-self: start;
+  }
 }
 
 @media (max-width: 767px) {
   .profile__edit-button {
-      margin: 0;
-      width: 18px;
-      height: 18px;
-      
-          
-  }   
+    margin: 0;
+    width: 18px;
+    height: 18px;
+  }
 }

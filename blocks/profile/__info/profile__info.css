@@ -21,10 +21,8 @@
   }
 }
 
-
 @media (max-width: 767px) {
-    .profile__info {
-      grid-template-columns: 1fr 210px 1fr;
-    }
+  .profile__info {
+    grid-template-columns: 1fr 210px 1fr;
   }
-  
+}

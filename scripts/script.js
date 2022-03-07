@@ -16,7 +16,6 @@ closePopup.addEventListener("click", togglePopup);
 
 saveProfile.addEventListener("click", togglePopup);
 
-
 let formElement = document.querySelector(".popup__form");
 
 formElement.querySelector(".popup__input_username").value =

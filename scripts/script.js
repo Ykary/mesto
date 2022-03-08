@@ -18,6 +18,8 @@ popupOpen.addEventListener("click", openPopup);
 
 function closePopup() {
   popup.classList.remove("popup_opened");
+  nameInput.value = '';
+  jobInput.value = '';
 }
 
 popupClose.addEventListener("click", closePopup);

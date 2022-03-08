@@ -1,11 +1,11 @@
 .profile__info {
   width: 336px;
-  height: 73px;
   display: grid;
   align-self: center;
   grid-template-areas:
     "name button"
     "info info";
+  
 }
 
 @media (max-width: 920px) {
@@ -21,10 +21,8 @@
   }
 }
 
-
 @media (max-width: 767px) {
-    .profile__info {
-      grid-template-columns: 1fr 210px 1fr;
-    }
+  .profile__info {
+    grid-template-columns: 1fr 210px 1fr;
   }
-  
+}

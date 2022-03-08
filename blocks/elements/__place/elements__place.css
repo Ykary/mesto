@@ -3,7 +3,6 @@
   width: 241px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  margin-top: 20px;
+  margin: 20px auto 26px;
   overflow: hidden;
 }

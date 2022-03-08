@@ -1,3 +1,4 @@
 .elements__photo {
-    max-height: 282px;
+  max-height: 282px;
+  aspect-ratio: 1/1;
 }

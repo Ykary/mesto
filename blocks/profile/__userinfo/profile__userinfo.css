@@ -4,6 +4,9 @@
   font-weight: 400;
   line-height: 1.2;
   grid-area: info;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .profile__userinfo {

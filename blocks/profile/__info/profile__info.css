@@ -1,27 +1,26 @@
 .profile__info {
-  width: 336px;
+  max-width: 550px;
   display: grid;
   align-self: center;
   grid-template-areas:
     "name button"
-    "info info";
+    "info .";
 }
-
-@media (max-width: 920px) {
+  
+@media (max-width: 1256px) {
   .profile__info {
-    width: 100%;
     padding: 22px 0;
-    justify-items: center;
     align-items: center;
     grid-template-areas:
       ". name button"
       ". info .";
     grid-template-columns: 1fr 336px 1fr;
-  }
+    }
 }
 
 @media (max-width: 767px) {
   .profile__info {
+    padding-top: 26px;
     grid-template-columns: 1fr 210px 1fr;
   }
 }

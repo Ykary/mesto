@@ -14,7 +14,7 @@
   opacity: 60%;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1256px) {
   .profile__add-button {
     margin: 0;
   }

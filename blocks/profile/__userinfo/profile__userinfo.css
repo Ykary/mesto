@@ -3,16 +3,17 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
+  max-width: 100%;
   grid-area: info;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
+
+
 @media (max-width: 767px) {
   .profile__userinfo {
     font-size: 14px;
-    justify-self: center;
-    margin: 0;
-    align-self: start;
+    margin: 10px auto;
   }
 }

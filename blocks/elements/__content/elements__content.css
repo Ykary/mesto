@@ -10,4 +10,5 @@
   gap: 16px;
   row-gap: 20px;
   column-gap: 17px;
+  justify-items: center;
 }

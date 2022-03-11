@@ -5,8 +5,8 @@ let popup = document.querySelector(".popup");
 let popupOpen = document.querySelector(".profile__edit-button");
 let popupClose = popup.querySelector(".popup__close");
 let formElement = document.querySelector(".popup__form");
-let nameInput = formElement.querySelector(".popup__input_username");
-let jobInput = formElement.querySelector(".popup__input_userinfo");
+let nameInput = formElement.querySelector(".popup__input_user_name");
+let jobInput = formElement.querySelector(".popup__input_user_info");
 
 function openPopup() {
   nameInput.value = userName.textContent;

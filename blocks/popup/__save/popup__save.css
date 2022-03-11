@@ -12,3 +12,9 @@
 .popup__save:hover {
   opacity: 80%;
 }
+
+@media (max-width: 767px) {
+  .popup__save {
+    font-size: 14px; 
+  }
+}

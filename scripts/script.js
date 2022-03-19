@@ -1,3 +1,52 @@
+//получаем контейнер списка мест
+const contentList = document.querySelector(".elements__content");
+//получаем содержимое шаблона
+const placeTemplate = document.querySelector(".place-template").content;
+
+
+const initialCards = [
+  {
+    name: 'Архыз',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+  },
+  {
+    name: 'Челябинская область',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+  },
+  {
+    name: 'Иваново',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+  },
+  {
+    name: 'Камчатка',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+  },
+  {
+    name: 'Холмогорский район',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+  },
+  {
+    name: 'Байкал',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+  }
+];
+
+initialCards.forEach(function (element) {
+  const placeElement = placeTemplate.cloneNode(true);
+
+  placeElement.querySelector(".elements__photo").src = element.link;
+  placeElement.querySelector(".elements__title").textContent = element.name;
+
+  contentList.append(placeElement);
+});
+
+
+const contentForm = document.querySelector(".popup__form_new_place");
+const placeFormInput = document.querySelector(".popup__input_new_place");
+const photoLinkFormInput = document.querySelector(".popup__input_new_photo");
+const contentFormSubmitBtn = contentForm.querySelector(".popup__save_content_btn");
+
+
 let profileContainer = document.querySelector(".profile");
 let userName = profileContainer.querySelector(".profile__username");
 let userInfo = profileContainer.querySelector(".profile__userinfo");
@@ -39,3 +88,5 @@ function formSubmitHandler(evt) {
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
 formElement.addEventListener("submit", formSubmitHandler);
+
+

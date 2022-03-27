@@ -1,9 +1,8 @@
 .elements__item {
+  position: relative;
   width: 282px;
   background-color: white;
   border-radius: 10px;
   margin: 0;
   overflow: hidden;
-  
-  
 }

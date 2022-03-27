@@ -8,6 +8,7 @@
   margin: 50px 0 0;
   cursor: pointer;
   transition: 0.2s linear;
+  border-radius: 2px;
 }
 .popup__save:hover {
   opacity: 80%;

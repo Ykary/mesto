@@ -25,26 +25,31 @@
         <div class="profile__info">
           <h1 class="profile__username">Жак-Ив Кусто</h1>
           <button type="button" class="profile__edit-button">
-            <img src="./images/pen.svg" class="profile__edit-button-img" alt="кнопка редактировать профиль" />
+            <img
+              src="./images/pen.svg"
+              class="profile__edit-button-img"
+              alt="кнопка редактировать профиль"
+            />
           </button>
           <p class="profile__userinfo">Исследователь океана</p>
         </div>
         <button type="button" class="profile__add-button">
-          <img src="./images/plus.svg" class="profile__add-button-img" alt="кнопка добавить контент" />
+          <img
+            src="./images/plus.svg"
+            class="profile__add-button-img"
+            alt="кнопка добавить контент"
+          />
         </button>
       </section>
       <section class="elements">
         <ul class="elements__content"></ul>
-        
       </section>
-      
     </main>
     <footer class="footer">
       <p class="footer__copiright">© 2022 Mesto Russia</p>
     </footer>
 
-    <template id="place-template"
-    class="place-template">
+    <template id="place-template" class="place-template">
       <li class="elements__item">
         <button type="button" class="elements__trash"></button>
         <img
@@ -54,12 +59,15 @@
         <div class="elements__place">
           <h2 class="elements__title">Карачаевск</h2>
           <button type="button" class="elements__like"></button>
-          </div>
+        </div>
       </li>
     </template>
     <div class="popup popup-edit-profile">
       <div class="popup__container popup__container_type_form">
-        <button type="button" class="popup__close popup__close_edit-profile"></button>
+        <button
+          type="button"
+          class="popup__close popup__close_edit-profile"
+        ></button>
         <h2 class="popup__title">Редактировать профиль</h2>
         <form name="popup__form" class="popup__form popup__form_profile">
           <fieldset class="popup__input-container">
@@ -81,11 +89,17 @@
       </div>
     </div>
 
-   <div class="popup popup-add-place">
+    <div class="popup popup-add-place">
       <div class="popup__container popup__container_type_form">
-        <button type="button" class="popup__close popup__close_add-place"></button>
+        <button
+          type="button"
+          class="popup__close popup__close_add-place"
+        ></button>
         <h2 class="popup__title">Новое место</h2>
-        <form name="popup__place-form" class="popup__form popup__form_new_place">
+        <form
+          name="popup__place-form"
+          class="popup__form popup__form_new_place"
+        >
           <fieldset class="popup__input-container">
             <input
               type="text"
@@ -100,14 +114,16 @@
               placeholder="Ссылка на картинку"
             />
           </fieldset>
-          <button type="submit" class="popup__save popup__save_content_btn">Создать</button>
+          <button type="submit" class="popup__save popup__save_content_btn">
+            Создать
+          </button>
         </form>
       </div>
     </div>
     <div class="popup popup-open-image">
       <figure class="popup__container popup__container_type_image">
         <button type="button" class="popup__close popup__close_img"></button>
-        <img class="popup__image" src="#">
+        <img class="popup__image" src="#" alt="name" />
         <figcaption class="popup__image-name"></figcaption>
       </figure>
     </div>

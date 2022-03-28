@@ -1,4 +1,4 @@
-.popup_form_container {
+.popup__container_type_form {
     width: 430px;
     min-height: 330px;
     border-radius: 10px;
@@ -13,7 +13,7 @@
     }
   
   @media (max-width: 767px) {
-    .popup__form_container {
+    .popup__container_type_form {
       width: 282px;
       min-height: 322px;
       margin-top: -161px;

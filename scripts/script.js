@@ -3,7 +3,6 @@ const contentList = document.querySelector(".elements__content");
 //получаем содержимое шаблона
 const placeTemplate = document.querySelector(".place-template").content;
 
-
 function likeCard(evt) {
   evt.target.classList.toggle("elements__like_active");
 }
@@ -16,9 +15,8 @@ function deleteCard(evt) {
 
 initialCards.forEach(function (element) {
   addCard(element.link, element.name);
-    });
+});
 
-  
 const profileContainer = document.querySelector(".profile");
 const userName = profileContainer.querySelector(".profile__username");
 const userInfo = profileContainer.querySelector(".profile__userinfo");
@@ -60,10 +58,9 @@ function closePopup(popupName) {
 //слушатель кнопки закрытия профайла
 popupCloseEditBtn.addEventListener("click", function () {
   closePopup(popupEditProfile);
-  });
+});
 //слушатель кнопки закрытия контента
 popupCloseAddBtn.addEventListener("click", function () {
-  
   closePopup(popupAddContent);
 });
 //слушатель кнопки закрытия картинки
@@ -92,11 +89,11 @@ function createCard(newPhoto, newPlace) {
   //параметры
   //переменные для функции контента
   const newPlaceElement = placeTemplate.cloneNode(true);
-  newPlaceElement.querySelector(".elements__photo").src = newPhoto;
-  newPlaceElement.querySelector(".elements__title").textContent =
-    newPlace;
-  newPlaceElement.querySelector(".elements__title").alt =
-    newPlace;
+  const cardPhoto = newPlaceElement.querySelector(".elements__photo");
+  cardPhoto.src = newPhoto;
+  cardPhoto.alt = newPlace;
+  newPlaceElement.querySelector(".elements__title").textContent = newPlace;
+
   //слушатель кнопки лайк для карточек
   newPlaceElement
     .querySelector(".elements__like")
@@ -106,19 +103,15 @@ function createCard(newPhoto, newPlace) {
     .querySelector(".elements__trash")
     .addEventListener("click", deleteCard);
   //открытие попапа картинки для карточек
-  newPlaceElement
-    .querySelector(".elements__photo")
-    .addEventListener("click", function () {
-      imageOpened.src = newPhoto;
-      imageCaption.textContent = newPlace;
-      imageOpened.alt = newPlace;
-      openPopup(popupImage);
-    });
+  cardPhoto.addEventListener("click", function () {
+    imageOpened.src = newPhoto;
+    imageCaption.textContent = newPlace;
+    imageOpened.alt = newPlace;
+    openPopup(popupImage);
+  });
 
   return newPlaceElement;
 }
-
-
 
 //добавляем новую карточку
 function addCard(newPhoto, newPlace) {
@@ -128,7 +121,7 @@ function addCard(newPhoto, newPlace) {
 //обработчик формы контента
 function formPlaceSubmitHandler(evt) {
   evt.preventDefault();
-  
+
   addCard(newPhoto.value, newPlace.value);
   closePopup(popupAddContent);
   newPlace.value = "";

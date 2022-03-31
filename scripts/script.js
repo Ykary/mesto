@@ -63,8 +63,7 @@ popupCloseEditBtn.addEventListener("click", function () {
   });
 //слушатель кнопки закрытия контента
 popupCloseAddBtn.addEventListener("click", function () {
-  newPlace.value = "";
-  newPhoto.value = "";
+  
   closePopup(popupAddContent);
 });
 //слушатель кнопки закрытия картинки
